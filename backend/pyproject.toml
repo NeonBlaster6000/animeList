@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "anime-backend"
+version = "0.1.0"
+description = "FastAPI backend for anime project"
+
+dependencies = [
+    "fastapi",
+    "uvicorn[standard]",
+    "sqlalchemy",
+    "asyncpg",
+    "databases",
+    "pydantic",
+    "passlib[bcrypt]",
+    "python-jose[cryptography]",
+    "psycopg2-binary"
+]
